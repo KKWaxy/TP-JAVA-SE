@@ -28,7 +28,7 @@ public class Matrice {
     private int colonne;
     private float matrice[][];
     
-    public Matrice(){}
+    public Matrice(){};
     
     private Matrice(int ligne, int colonne){
         this.ligne = ligne;
