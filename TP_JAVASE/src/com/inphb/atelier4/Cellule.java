@@ -24,21 +24,21 @@ public class Cellule {
     int _info;
     private Cellule _suivant;
     
-    public Cellule(){
+    Cellule(){
         this._info = 0;
         this._suivant=null;
     };
-    public Cellule(int info,Cellule suiv){
+    Cellule(int info,Cellule suiv){
         this._info = info;
         this._suivant = suiv;
     };
-    public void setSuivant(Cellule suiv){
+    void setSuivant(Cellule suiv){
         this._suivant = suiv;
     };
-    public Cellule getSuivant(){
+    Cellule getSuivant(){
         return(this._suivant);
     };
-    public int getInfo(){
+    int getInfo(){
         return(this._info);
     };
 };

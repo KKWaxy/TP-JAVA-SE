@@ -4,16 +4,19 @@ public class Pile extends Liste {
     
     private int _taille;
     
-    public Pile(){
+    Pile(){
         super();
         this._taille=0;
     };
-  
-    public boolean estVide(){
+    
+    Pile(Cellule cellule){
+        super(cellule);
+    }
+    boolean estVide(){
         return(this.teteListe().getSuivant()==null);
     };
 
-    public Cellule sommet(){
+    Cellule sommet(){
         
         if(this.estVide()){
             System.err.println("Vous avez une pile vide.");
@@ -27,16 +30,16 @@ public class Pile extends Liste {
         }
     }
     
-    public int taille(){
+    int taille(){
         return(this._taille);
     }
     
-    public void empiler(Cellule element){
+    void empiler(Cellule element){
         this._taille++;
         this.insertEnd(element);
     }
    
-    public void depiler(){
+    void depiler(){
         if(this.estVide()){
             System.err.println("Vous avez une pile vide.");
         }else{
