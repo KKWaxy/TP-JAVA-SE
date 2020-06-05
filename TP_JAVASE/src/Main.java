@@ -1,8 +1,7 @@
-
 import com.inphb.atelier1.Point;
 import com.inphb.atelier2.Pile;
 import com.inphb.atelier3.Matrice;
-import java.util.Arrays;
+
 
 public class Main {
     
